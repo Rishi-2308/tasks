@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Student Profile</title>
+    <link rel="stylesheet" href="interactive.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Interaction Page</h1>
+    
+</header>
+
+<!-- Dropdown Section -->
+<section class="section">
+    <h2>Select Your Skill</h2>
+    <select id="skillSelect">
+        <option value="">-- Choose a Skill --</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Machine Learning">Machine Learning</option>
+        <option value="Cyber Security">Cyber Security</option>
+    </select>
+    <p id="skillOutput"></p>
+</section>
+
+<!-- Modal Button -->
+<section class="section">
+    <button id="openModal">View Profile Info</button>
+</section>
+
+<!-- Modal -->
+<div id="profileModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+
+        <h3>Student Profile</h3>
+
+        <div class="profile-details">
+            <p><strong>Name:</strong> Rishitha Akula</p>
+            <p><strong>Education:</strong> B.Tech in Computer Science</p>
+            <p><strong>Specialization:</strong> Artificial Intelligence & Web Development</p>
+            <p><strong>Technical Skills:</strong></p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python & Machine Learning</li>
+                
+            </ul>
+            <p><strong>Projects Completed:</strong> 5+</p>
+            <p><strong>Career Objective:</strong> 
+                To develop intelligent and user-friendly applications 
+                that solve real-world problems.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Form Section -->
+<section class="section">
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="email" id="email" placeholder="Enter your email">
+        <textarea id="message" placeholder="Enter your message"></textarea>
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+    </form>
+</section>
+
+<script src="interactive.js"></script>
+
+</body>
+</html>
